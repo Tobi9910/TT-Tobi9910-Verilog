@@ -1,5 +1,5 @@
 module tt_um_vga_controller(
-  input        clock,
+  input        clk,
   input        reset,
   input        io_reset, // @[\\src\\main\\scala\\Controller.scala 17:14]
   output       io_video_on, // @[\\src\\main\\scala\\Controller.scala 17:14]
@@ -41,7 +41,7 @@ module tt_um_vga_controller(
   assign io_p_tick = reset ? 2'h0 : p_tick; // @[\\src\\main\\scala\\Controller.scala 44:13 56:23 60:15]
   assign io_x = x_count_reg; // @[\\src\\main\\scala\\Controller.scala 118:8]
   assign io_y = y_count_reg; // @[\\src\\main\\scala\\Controller.scala 119:8]
-  always @(posedge clock) begin
+  always @(posedge clk) begin
     if (reset) begin // @[\\src\\main\\scala\\Controller.scala 39:23]
       p_tick <= 2'h0; // @[\\src\\main\\scala\\Controller.scala 39:23]
     end else if (p_tick == 2'h3) begin // @[\\src\\main\\scala\\Controller.scala 41:23]
