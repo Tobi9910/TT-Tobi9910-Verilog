@@ -3,6 +3,7 @@ module tt_um_vga_controller(
   input        reset,
   input        io_reset, // @[\\src\\main\\scala\\Controller.scala 17:14]
   input        ena,      // will go high when the design is enabled
+  input        rst_n     // reset_n - low to reset
   output       io_video_on, // @[\\src\\main\\scala\\Controller.scala 17:14]
   output       io_hsync, // @[\\src\\main\\scala\\Controller.scala 17:14]
   output       io_vsync, // @[\\src\\main\\scala\\Controller.scala 17:14]
