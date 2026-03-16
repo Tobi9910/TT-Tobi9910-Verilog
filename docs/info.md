@@ -9,13 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
-It works by working
+It really works well
 
 ## How to test
 
-Explain how to use your project
-Ya cant rn
+Ya cant rn tbh
 
 ## External hardware
 VGA, Screen
